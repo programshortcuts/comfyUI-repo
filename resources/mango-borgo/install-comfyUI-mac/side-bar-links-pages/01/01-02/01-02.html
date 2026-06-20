@@ -6,72 +6,165 @@
     <div class="steps-container">
         <!-- 1. -->
         <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m"
-            data-timestamp="290">
-        
+            data-timestamp="304">
+            
             <div class="step-txt ">
                 <h4>1</h4>
                 <p>
                     Go to
-                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/Comfy-Org/ComfyUI">
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/Comfy-Org/ComfyUI#:~:text=Others%3A-,Apple%20Mac%20silicon,-You%20can%20install">
                         https://github.com/Comfy-Org/ComfyUI
                     </a>
-        
                 </p>
+                <p>
+                    folow step 1 , use <code>pip3</code> to install pytorch
+                </p>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+                        pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+</code>
+                </div>
+                
+            </div>
+            <div class="imgs-container">
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01/01-02/images/01.png"
+                        src="side-bar-links-pages/01/01-02/images/01.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/01/01-02/images/01-b.png" alt="">
+                </div>
+                
             </div>
         </div>
         <!-- 2. -->
-        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m"
-            data-timestamp="182">
-            <div class="step-img">
-                <img loading="lazy" src="side-bar-links-pages/01/01-01/images/02.png" alt="">
-            </div>
-
-            <div class="step-txt ">
-                <h4>2. Make enviroment in conda</h4>
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m" 
+            data-timestamp="360">
+            <h3>2- Clone the repo</h3>
+            
+            <div  class="step-txt ">
+                <h4></h4>
                 <p>
-                    Create enviroment for <strong>ComfyUI</strong> with name and python version
+                    from <a rel="noopener noreferrer" target="_blank"
+                        href="https://github.com/Comfy-Org/ComfyUI">
+                        https://github.com/Comfy-Org/ComfyUI
+                    </a>
                 </p>
+                <p>
+                    git <code>clone</code> the code
+                </p>
+                <p>
+                    You will need brew and git installed for this to work 
+                    <a rel="nopener noreferrer" target="_blank" href="https://brew.sh/">https://brew.sh/</a>
+                    <a rel="nopener noreferrer" target="_blank" href="https://git-scm.com/install/mac">https://git-scm.com/install/mac</a>
+                    
+                </p>
+                <p class="r">
+                    I had to reinstall <code>brew</code>, then git from link above then the command
+                </p>
+                <p>
+                    wasnt' sure but activated comfyui env before cloning repo
+                </p>
+<div class="code-container">
+    <code tabindex="0" class="copy-code">
+        conda activate comfyui</code>
+</div>
+
                 <div class="code-container">
                     <code tabindex="0" class="copy-code">
-conda create -n comfyui python=3.12</code>
+git clone https://github.com/Comfy-Org/ComfyUI.git    </code>
                 </div>
-                <p>
-                    python version depends on what mac, at least 3.10
-                </p>
+            </div>
+            <div class="imgs-container">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/01/01-02/images/02.png" alt="">
+                </div>
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/01/01-02/images/02-b.png" alt="">
+                </div>
+                
             </div>
         </div>
         <!-- 3. -->
-        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m"
-            data-timestamp="250">
-            <div class="step-img">
-                <img loading="lazy" src="side-bar-links-pages/01/01-01/images/03.png" alt="">
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m" 
+            data-timestamp="584">
+            <h3>3- Install requirement.txt</h3>
+            
+            <div  class="step-txt ">
+                <h4></h4>
+                <p>
+                    As seen at <a rel="noopener noreferrer" target="_blank"
+                        href="https://github.com/Comfy-Org/ComfyUI">
+                        https://github.com/Comfy-Org/ComfyUI
+                    </a>
+                </p>
+                <p>
+                    Make sure you are in <code class="m">(comfyui)</code> enviroment, and you are in the ComfyUI directory
+                    created in the last step
+                </p>
+                <p>
+                    paste this command 
+                </p>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+pip install -r requirements.txt
+</code>
+                </div>
+                <p class="r">
+                    I ran into this error, Make sure python and pip are running through the miniconda enviroment,
+                    I had <code>alias</code> for both pip and python
+                </p>
+                
+                
             </div>
-
-            <div class="step-txt ">
-                <h4>3. <code>active</code> / <code>deactivate</code> comfyui enviroment</h4>
-                <p>
-                    activate and deactivate it with these commands
-                </p>
-                <div class="code-container">
-                    <code tabindex="0" class="copy-code">
-conda activate comfyui </code>
+            <div class="imgs-container">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/01/01-02/images/03.png" alt="">
                 </div>
-                <div class="code-container">
-                    <code tabindex="0" class="copy-code">
-conda deactivate comfyui </code>
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/01/01-02/images/03-b.png" alt="">
                 </div>
-                <p>
-                    activating changes the the env to <code class="m">(comfyui)</code> and you can see python is using version 12
-                </p>
-                <p class="r">Not using 12 but figure out later, probably have to update it in venv or something</p>
-                <div class="code-container">
-                    <code tabindex="0" class="copy-code">
-python</code>
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/01/01-02/images/03-c.png" alt="">
                 </div>
-                <p>
-                    proceed to comfui ui github install 
-                </p>
+                
             </div>
+        </div>
+        <!-- 4. -->
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m" 
+            data-timestamp="615">
+            <h3>4- run comfyui</h3>
+            <div class="step-vid ">
+                <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01/01-02/images/04.png"
+                src="side-bar-links-pages/01/01-02/images/04.mov"></video>
+                <div class="vid-cntrl-btns">
+                    <button class="fwdBtn">&lt;&lt;</button>
+                    <button class="playbtn">></button>
+                    <button class="rwdBtn">>></button>
+                </div>
+            </div>
+            <div  class="step-txt ">
+                <h4></h4>
+                <p>
+                    Run the <code>main.py</code> python script in the ComfyUI directory to get server
+                </p>                
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+cd ComfyUI</code>
+                </div>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+python main.py</code>
+                </div>
+                
+                
+            </div>
+            
         </div>
 
     </div>
