@@ -1,176 +1,35 @@
 <div id="targetDiv">
-    <div class="main-container">
+    <div class="steps-container">
         <header>
+            <h3>1 TBD </h3>
         </header>
-        <div class="steps-container">
-            <h3 id="targetHeaderh3">01-01 Shortcuts </h3>
 
-            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
-                data-timestamp="2090">
-                <h4>1 Install </h4>
-                <div class="content-boxes">
-                    <div class="step-txt ">
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
+            data-timestamp="2090">
+            <h4>1 Install </h4>
+            <div class="content-boxes">
+                <div class="step-txt ">
 
-                        <p>
-                            THESE are THE JSONs THAT WORKS
-                        </p>
-                        <p>
-                            THESE ARE THE ONLY models that is working
-                        </p>
-                        <div class="code-containers-wrapper">
-                            <div class="code-container">
-                                <code tabindex="0" class="copy-code">
-                                qwen3.6-35b-a3b</code>
-                                <div class="code-container">
-                                    <pre tabindex="0" class="copy-code">
-        [
-            {
-                "name": "LM Studio Local",
-                "vendor": "customendpoint",
-                "apiKey": "${input:chat.lm.secret.-24f31728}",
-                "apiType": "chat-completions",
-                "models": [
-                    {
-                        "id": "qwen/qwen3.6-35b-a3b",
-                        "name": "qwen3.6-35b-a3b",
-                        "url": "http://127.0.0.1:1234/v1",
-                        "toolCalling": true,
-                        "vision": true,
-                        "maxInputTokens": 32768,
-                        "maxOutputTokens": 16000
-                    }
-                ]
-            }
-        ]</pre>
-                                </div>
-                            </div>
-                            <div class="code-container">
-                                <div class="code-container">
-                                    <code tabindex="0" class="copy-code">
-                                        gemma-3-12b</code>
-                                </div>
-
-                                <pre tabindex="0" class="copy-code">
-    [
-        {
-            "name": "LM Studio Local",
-            "vendor": "customendpoint",
-            "apiKey": "${input:chat.lm.secret.-7debc4ad}",
-            "apiType": "chat-completions",
-            "models": [
-                {
-                    "id": "google/gemma-3-12b",
-                    "name": "Gemma-3-12b",
-                    "url": "http://127.0.0.1:1234/v1/",
-                    "toolCalling": true,
-                    "vision": true,
-                    "maxInputTokens": 32768,
-                    "maxOutputTokens": 16384
-                }
-            ]
-        }
-    ]</pre>
-                            </div>
-
-                        </div>
-                        <p>
-                            <span class="r">** Remember</span>
-                            if it's not hugging face, it DOES NOT need <code class="r">goooge/</code> in
-                            <code>model: gemma-3-12b</code>
-                        </p>
-                        <sup class="r">** Spacing IS CRUCIAL IN .yaml</sup>
-                        <div class="code-container">
-                            <pre tabindex="0" class="copy-code">
+                    <p>
+                        tbd
+                    </p>
+                    
+                    
+                        <pre tabindex="0" class="copy-code">
 name: Local Config
 version: 1.0.0
 schema: v1
 
 models:
-  - name: Gemma-3-12b
-    provider: lmstudio
-    model: gemma-3-12b
-    apiBase: http://127.0.0.1:1234/v1 
+- name: Gemma-3-12b
+provider: lmstudio
+model: gemma-3-12b
+apiBase: http://127.0.0.1:1234/v1 
 </pre>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
-                data-timestamp="">
-
-                <div class="step-txt ">
-                    <h4></h4>
-                    <p>
-                        <span class="r">** Important</span>
-                        putting this
-                    </p>
-                    <div class="code-container">
-                        <code tabindex="0" class="copy-code">
-                            settings.json</code>
-                    </div>
-                    <p>
-                        press ⌘ + ⇧ + P for 'command pallat' and type settings.json, paste the following in there, so
-                        VS code Snippets still work
-                    </p>
-                    <div class="code-container">
-                        <pre tabindex="0" class="copy-code">
-"editor.snippetSuggestions": "top",
-"editor.tabCompletion": "on",
-"editor.suggest.showSnippets": true,
-"editor.inlineSuggest.enabled": true,</pre>
-                    </div>
-                </div>
-            </div>
-            <div class="step-float">
-                <h1>GREAT IDEA For these PAGES</h1>
-                <p>
-                    Create nav mode using ⌘ + ⇧ + x
-                </p>
-                <p>
-                    To active letter focus!! Great Idea😉
-                </p>
-            </div>
-            <div class="step-float">
-                <h1>GREAT IDEA For these PAGES</h1>
-                <p>
-                    Create nav mode using ⌘ + ⇧ + x
-                </p>
-            </div>
-            <div tabindex="0" class="step-float" data-video="https: //www.youtube.com/watch?v=UngVdAsQEiU"
-                data-timestamp="617">
-                <div class="imgs-container">
-
-                    <div class="step-img">
-                        <img loading="lazy" src="images/01.png" alt="">
-                    </div>
-                    <div class="step-img">
-                        <img loading="lazy" src="images/02.png" alt="">
-                    </div>
-                    <div class="step-img">
-                        <img loading="lazy" src="images/03.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="step-txt ">
-                    <h4>1</h4>
-                    <p class="pt-20">
-                        ⌘ + ⇧ + M - 'Models Search'
-                    </p>
-                    <p class="pt-20">
-                        ⌘ + 3 - 'My Models'
-                    </p>
-                    <p class="pt-20">
-                        ⌘ + 1 - 'Chat'
-                    </p>
-
+                    
 
                 </div>
             </div>
         </div>
-
     </div>
 </div>

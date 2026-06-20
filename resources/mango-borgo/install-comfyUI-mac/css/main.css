@@ -1,8 +1,10 @@
 @import url('popup-letterNav.css');
+@import url('dark-mode.css');
 @import url('responsive.css');
 /* components */
 @import url('components/side-bar.css');
 /* uis */
+@import url('ui/letter-nav-popups.css');
 @import url('ui/toggle-side-bar.css');
 @import url('ui/copyCode.css');
 @import url('ui/toggle-img-sizes.css');

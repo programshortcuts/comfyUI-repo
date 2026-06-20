@@ -1,9 +1,17 @@
-/* popup-letterNav.css */
-#popupLetterNav{
+.nav-mode-colors {
+    background: rgb(93, 104, 125);
+}
+
+.nav-mode-colors a {
+    color: whitesmoke !important;
+}
+
+/* letter-nav-popups.css */
+#popElLetterNav {
     display: inline-block;
-    position: sticky;
+    position: absolute;
     color: blue;
-    
+    z-index: 99999;
     font-weight: 99;
     font-size: bold;
     text-shadow: 0 0 2px white;
@@ -15,13 +23,15 @@
     bottom: 10vh;
     left: 0;
 }
-#popupLetterNav.animate{
+
+#popElLetterNav.animate {
     opacity: 1;
     transition: opacity 400ms;
     position: fixed;
     /* top: 0; */
 }
-.dark-mode #popupLetterNav.animate {
+
+.dark-mode #popElLetterNav.animate {
     color: limegreen;
 
 }

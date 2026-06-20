@@ -2,12 +2,13 @@
 let lastLetterPressed = null
 import { mainTargetDiv } from "../nav/main-content-nav.js"
 import { getLastStep } from "../nav/step-nav.js"
-import { pageWrapper } from "../core/main-script.js"
+import { pageWrapper } from "../core/script.js"
 export function letterNav({ e }) {
+    console.log('here')
     const key = e.key.toLowerCase()
     let target
     if (e.metaKey) return
-
+    console.log('go')
     const allEls = [...document.querySelectorAll('[id],a')].filter(el => {
         if (el.id === 'mainTargetDiv') return true
         return isActuallyVisible(el)
