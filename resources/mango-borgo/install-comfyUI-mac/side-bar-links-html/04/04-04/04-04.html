@@ -1,0 +1,178 @@
+<!-- 04-04.html -->
+<div id="targetDiv">
+    <header>
+        <h3 id="targetHeaderh3">04-4. Connect Module to 'Continue&nbsp;Extension'</h3>
+    </header>
+    <div class="steps-container">
+        <!-- 1. -->
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
+            data-timestamp="1643">
+            <h4>1. Connect Model is 'models' tab in settings</h4>
+            <div class="step-txt ">
+                <p>
+                    click gear for settings, then + button
+                </p>
+            </div>
+            <div class="step-vid ">
+                <video preload="none" playsinline webkit-playsinline poster="side-bar-links-html/04/04-04/images/01.png"
+                    src="side-bar-links-html/04/04-04/images/01.mov"></video>
+                <div class="vid-cntrl-btns">
+                    <button class="fwdBtn">&lt;&lt;</button>
+                    <button class="playbtn">></button>
+                    <button class="rwdBtn">>></button>
+                </div>
+            </div>
+        </div>
+        <!-- 2. -->
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
+            data-timestamp="1652">
+            <h4>2</h4>
+            <div class="step-txt">
+                <p>
+                    Choose <sup>LM Studio </sup> for provider
+                </p>
+                <p>
+                    Often models from
+                    <a rel="noopener noreferrer" target="_blank" href="https://huggingface.co/models">
+                        huggingface
+                    </a> like,
+                </p>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+                                    Qwen2.5-Coder-1.5B-Instruct-GGUF</code>
+                </div>
+                <p>
+                    won't show, choose any, and a <code>config.yaml</code> file will open, where,
+                    you setup you model from <sup>LM Studio</sup>
+                </p>
+            </div>
+            <div class="imgs-container">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-html/04/04-04/images/02.png" alt="">
+                </div>
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline
+                        poster="side-bar-links-html/04/04-04/images/02-b.png"
+                        src="side-bar-links-html/04/04-04/images/02-b.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3. -->
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
+            data-timestamp="1701">
+            <h4>3. <code>config.yaml</code> setup</h4>
+            <div class="step-img">
+                <img loading="lazy" src="side-bar-links-html/04/04-04/images/03-00.png" alt="">
+            </div>
+            <div class="step-txt ">
+                <p>
+                    Create any name for <code class="b">-name</code>, in our case we're naming it <span
+                        class="o">Autocomplete</span>
+                    <div class="code-container">
+                        <span class="b">- name:</span> <code tabindex="0" class="copy-code o">Autocomplete</code>
+                    </div>
+                </p>
+                <p>
+                    <code class="b">provider</code>, in our case is <span class="o">LM Studio</span>
+                    <div class="code-container">
+                        <span class="b">provider</span>: <code tabindex="0" class="copy-code o">
+                                lmstudio</code>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU" 
+            data-timestamp="1790">
+            <div  class="step-txt ">
+                <h4>4</h4>
+                <p>
+                    The <span class="t">first image</span>, in this step , shows the model name that should be
+                    copied and inserted into <code class="t">model</code>
+                </p>
+                <p>
+                    <code class="b">model</code>, in our case is <sup class="o">qwen2.5-coder-1.5b-instruct</sup>
+                    <div class="code-container">
+                        <span class="b">model</span>: <code tabindex="0" class="copy-code o">
+                                                        qwen2.5-coder-1.5b-instruct</code>
+                    </div>
+                </p>
+                <p>
+                    get the <code class="b">apiBase</code> from same widow in lm studio as name to copy,
+                    Add the <code>GET v1 base</code> api <span class="r">endpoint</span> to the end of server
+                    address
+                    <div class="code-container">
+                        <span class="b">apiBase</span>: <code tabindex="0" class="copy-code o">
+                        http://127.0.0.1:1234</code>
+                    </div>
+                </p>
+                <p>
+                    Finally , add <span class="b">roles</span> of model in program we connect, which in vs code is
+                    <span class="o">'autocomplete'</span>
+                    <div class="code-container">
+        <span class="b">roles</span>: <code tabindex="0" class="copy-code o">
+                                        ['autocomplete']
+                        </code>
+                    </div>
+                </p>
+            </div>
+            <div class="imgs-container">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-html/04/04-04/images/03.png" alt="">
+                </div>
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-html/04/04-04/images/03-b.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=UngVdAsQEiU"
+         data-timestamp="1808">
+         
+            <h4>5</h4>
+            <div class="step-vid ">
+                <video preload="none" playsinline webkit-playsinline poster="side-bar-links-html/04/04-04/images/05.png"
+                    src="side-bar-links-html/04/04-04/images/05.mov"></video>
+                <div class="vid-cntrl-btns">
+                    <button class="fwdBtn">&lt;&lt;</button>
+                    <button class="playbtn">></button>
+                    <button class="rwdBtn">>></button>
+                </div>
+            </div>
+            <div class="step-txt">
+        
+                <p>
+                    Now autocomplete shows up in the models tab of 'Continue' settings/configurations,
+                </p>
+                <p>
+                    <span class="r">**Important Note</span>, .yaml file won't work if spacing is wrong
+                </p>
+                <div class="code-container">
+                    <pre tabindex="0" class="copy-code">
+          - name: Autocomplete
+            provider: lmstudio
+            roles:
+              - autocomplete
+            model: qwen2.5-coder-1.5b-instruct
+            apiBase: http://127.0.0.1:1234/v1</pre>
+                </div>
+        
+                <p>
+                    You can see model working in LM Studio while autocommplete
+                </p>
+                <p>
+                    <span class="r">**Important Notes</span> if time by model is too slow
+                    you won't see autocommplete , you can check total time taken by
+                    model in logs in LM studio. In our case it's 1000ms
+                </p>
+        
+            </div>
+        
+        </div>
+    </div>
+</div>
