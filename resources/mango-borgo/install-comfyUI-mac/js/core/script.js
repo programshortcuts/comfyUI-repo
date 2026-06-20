@@ -25,18 +25,14 @@ import {
 } from "../nav/side-bar-nav.js";
 
 import { mainContentNav, mainTargetDiv } from "../nav/main-content-nav.js";
-
 export const navBarLessonTitle = document.querySelector('#navBarLessonTitle');
 export const pageWrapper = document.querySelector('.page-wrapper')
 let isLetterNavEnabled = false
 // =========================
 // INIT
 // =========================
-
 document.addEventListener('DOMContentLoaded', initMain);
-
 function initMain() {
-
     if (window._mainScriptInitialized) return;
     window._mainScriptInitialized = true;
 
@@ -60,9 +56,11 @@ function setupGlobalKeyListener() {
         const key = e.key.toLowerCase();
 // LETTER NAV is WORKING PERFECT, but this is awfule name for code where there is also letterFocus
     //  BAD CODE EVERYTHWHERE
-        popupLetterNav({e,isLetterNavEnabled})
-        console.log(isLetterNavEnabled)
-
+        if (e.key === 'x' && e.shiftKey && e.metaKey) {
+            isLetterNavEnabled = !isLetterNavEnabled
+            popupLetterNav({isLetterNavEnabled})
+        }
+        
         if(isLetterNavEnabled){
             letterNav({e})
             return
