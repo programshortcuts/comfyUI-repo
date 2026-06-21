@@ -74,3 +74,9 @@ body.dark-mode .highlight {
     border: 1px solid white !important;
     color: var(--bg-primary) !important;
 }
+
+
+.dark-mode .step-float:focus,
+.dark-mode .step-float:active {
+    background-color: rgb(144, 126, 126);
+}
