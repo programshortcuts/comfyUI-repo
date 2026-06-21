@@ -81,7 +81,12 @@ allSideBarLinks.forEach((el, i) => {
         if (key === 'enter') {
             e.preventDefault();
             if (lastFocusedSideBarLink == lastClickedSideBarLink){
-                mainTargetDiv.focus()
+
+                const step1 = mainTargetDiv.querySelector('.step-float')
+                console.log(step1)
+
+                step1.focus()
+                return
 
             }
             lastClickedSideBarLink = el;
