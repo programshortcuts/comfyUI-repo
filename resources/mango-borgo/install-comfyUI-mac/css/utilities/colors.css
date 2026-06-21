@@ -6,11 +6,10 @@
 body{
     /* background-color: rgba(76, 89, 105,.3); */
 }
-.page-header{
-
-    background-color: rgba(136, 76, 52, );
-}
+.page-header,
+.nav-bar-lesson-title,
 .side-bar{
+    background-color: var(--bcolor);
 }
 
 .nav-bar-lesson-title{

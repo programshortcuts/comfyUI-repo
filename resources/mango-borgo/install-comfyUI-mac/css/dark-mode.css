@@ -80,3 +80,8 @@ body.dark-mode .highlight {
 .dark-mode .step-float:active {
     background-color: rgb(144, 126, 126);
 }
+.dark-mode .page-header,
+.dark-mode .nav-bar-lesson-title,
+.dark-mode .side-bar{
+    background-color: inherit;
+}
