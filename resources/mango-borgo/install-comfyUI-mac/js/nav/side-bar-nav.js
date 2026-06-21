@@ -37,7 +37,7 @@ if (autoLink) {
     lastFocusedSideBarLink = autoLink;
     injectContent(autoLink.href);
 } else {
-    injectContent('homepage.html');
+    injectContent('home-page.html');
 }
 
 /* =========================
