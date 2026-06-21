@@ -179,7 +179,10 @@ document.addEventListener('keydown', (e) => {
 
         const currentCodeIndex =
             copyCodes.indexOf(activeCopyCode);
-
+        if(!isNaN(key)){
+            const intKey = parseInt(key)    
+            copyCodes[intKey - 1].focus()
+        }
         if (key === 'f') {
             e.preventDefault();
 
